@@ -1,0 +1,554 @@
+# HTML Text
+
+## What is HTML Text?
+
+HTML text refers to the content displayed on a webpage using text-related HTML elements.
+
+These elements help browsers understand the meaning and structure of textual content such as:
+
+- Headings
+- Paragraphs
+- Bold text
+- Italic text
+- Underlined text
+- Highlighted text
+- Superscript/Subscript text
+- Quotations
+- Code snippets
+
+---
+
+## Why Do HTML Text Elements Exist?
+
+Imagine if all webpage text looked like this:
+
+```
+Welcome to our website this is the title this is important text this is a quotation this is computer code.
+```
+
+The browser would not know:
+
+- Which text is a heading.
+- Which text is important.
+- Which text is quoted.
+- Which text represents code.
+
+HTML text elements provide **meaning (semantics)** to text.
+
+---
+
+# Headings
+
+Used to define titles and section headings.
+
+## Syntax
+
+```html
+<h1>Main Heading</h1>
+<h2>Sub Heading</h2>
+<h3>Section Heading</h3>
+<h4>Sub Section</h4>
+<h5>Minor Heading</h5>
+<h6>Smallest Heading</h6>
+```
+
+## Example
+
+```html
+<h1>HTML Tutorial</h1>
+<h2>Introduction</h2>
+<h3>Basics</h3>
+```
+
+## Output
+
+Largest text:
+```
+HTML Tutorial
+```
+
+Smaller text:
+```
+Introduction
+Basics
+```
+
+## Best Practice
+
+Use headings based on document structure.
+
+Do NOT use them only to make text bigger.
+
+---
+
+# Paragraph
+
+Used to represent blocks of text.
+
+## Syntax
+
+```html
+<p>This is a paragraph.</p>
+```
+
+## Example
+
+```html
+<p>
+HTML is used to structure webpages.
+</p>
+```
+
+## Output
+
+Displays a paragraph with spacing before and after it.
+
+---
+
+# Line Break
+
+Moves text to the next line.
+
+## Syntax
+
+```html
+<br>
+```
+
+## Example
+
+```html
+Hello<br>
+World
+```
+
+## Output
+
+```
+Hello
+World
+```
+
+---
+
+# Horizontal Rule
+
+Creates a horizontal line.
+
+## Syntax
+
+```html
+<hr>
+```
+
+## Example
+
+```html
+<p>Chapter 1</p>
+<hr>
+<p>Chapter 2</p>
+```
+
+---
+
+# Bold Text
+
+Makes text bold without emphasizing importance.
+
+## Syntax
+
+```html
+<b>Bold Text</b>
+```
+
+## Example
+
+```html
+<b>Welcome</b>
+```
+
+---
+
+# Strong Text
+
+Indicates important text.
+
+Browsers usually display it as bold.
+
+## Syntax
+
+```html
+<strong>Important</strong>
+```
+
+## Difference
+
+```html
+<b>Visual styling only</b>
+
+<strong>Important meaning</strong>
+```
+
+---
+
+# Italic Text
+
+Displays text in italic style.
+
+## Syntax
+
+```html
+<i>Italic Text</i>
+```
+
+---
+
+# Emphasized Text
+
+Indicates stress or emphasis.
+
+Usually displayed in italics.
+
+## Syntax
+
+```html
+<em>Very Important</em>
+```
+
+## Difference
+
+```html
+<i>Visual italic</i>
+
+<em>Semantic emphasis</em>
+```
+
+---
+
+# Underlined Text
+
+## Syntax
+
+```html
+<u>Underlined</u>
+```
+
+## Example
+
+```html
+<u>Notice</u>
+```
+
+---
+
+# Marked Text
+
+Highlights text.
+
+## Syntax
+
+```html
+<mark>Highlighted</mark>
+```
+
+## Example
+
+```html
+<p>This is <mark>important</mark>.</p>
+```
+
+---
+
+# Small Text
+
+Displays smaller text.
+
+## Syntax
+
+```html
+<small>Small text</small>
+```
+
+## Example
+
+```html
+<small>Terms and Conditions apply.</small>
+```
+
+---
+
+# Deleted Text
+
+Shows removed content.
+
+Usually displayed with a strike-through.
+
+## Syntax
+
+```html
+<del>Old Price</del>
+```
+
+## Example
+
+```html
+<del>$100</del>
+$80
+```
+
+## Output
+
+```
+$100   ← struck through
+$80
+```
+
+---
+
+# Inserted Text
+
+Represents newly inserted text.
+
+Usually underlined.
+
+## Syntax
+
+```html
+<ins>New Content</ins>
+```
+
+---
+
+# Subscript Text
+
+Appears below normal text.
+
+## Syntax
+
+```html
+<sub>Text</sub>
+```
+
+## Example
+
+```html
+H<sub>2</sub>O
+```
+
+## Output
+
+```
+H₂O
+```
+
+---
+
+# Superscript Text
+
+Appears above normal text.
+
+## Syntax
+
+```html
+<sup>Text</sup>
+```
+
+## Example
+
+```html
+x<sup>2</sup>
+```
+
+## Output
+
+```
+x²
+```
+
+---
+
+# Quotations
+
+## Short Quotations
+
+Uses `<q>`.
+
+### Example
+
+```html
+<p>He said, <q>Hello World</q></p>
+```
+
+### Output
+
+```
+He said, "Hello World"
+```
+
+---
+
+## Block Quotations
+
+Uses `<blockquote>`.
+
+### Example
+
+```html
+<blockquote>
+Success is not final.
+Failure is not fatal.
+</blockquote>
+```
+
+---
+
+# Abbreviations
+
+Uses `<abbr>`.
+
+## Example
+
+```html
+<abbr title="HyperText Markup Language">
+HTML
+</abbr>
+```
+
+When hovered:
+
+```
+HyperText Markup Language
+```
+
+---
+
+# Address
+
+Defines contact information.
+
+## Example
+
+```html
+<address>
+John Doe<br>
+Chennai<br>
+India
+</address>
+```
+
+---
+
+# Code Text
+
+Displays programming code.
+
+## Syntax
+
+```html
+<code>
+print("Hello")
+</code>
+```
+
+## Example
+
+```html
+<p>Use <code>print()</code> to display output.</p>
+```
+
+---
+
+# Preformatted Text
+
+Preserves spaces and line breaks.
+
+## Syntax
+
+```html
+<pre>
+Line 1
+    Line 2
+        Line 3
+</pre>
+```
+
+## Output
+
+Spacing remains exactly the same.
+
+---
+
+# Text Elements Comparison
+
+| Element | Purpose | Semantic Meaning |
+|----------|----------|-------------------|
+| `<b>` | Bold | No |
+| `<strong>` | Important text | Yes |
+| `<i>` | Italic | No |
+| `<em>` | Emphasized text | Yes |
+| `<del>` | Deleted text | Yes |
+| `<ins>` | Inserted text | Yes |
+| `<sub>` | Subscript | Yes |
+| `<sup>` | Superscript | Yes |
+| `<code>` | Code snippet | Yes |
+| `<mark>` | Highlight | Yes |
+
+---
+
+# Mental Model
+
+Think of HTML text elements as labels attached to text.
+
+Example:
+
+```
+Text
+ ↓
+Heading?
+Paragraph?
+Important?
+Code?
+Quotation?
+Chemical Formula?
+```
+
+The browser uses these labels to understand how the text should be interpreted.
+
+---
+
+# Best Practices
+
+- Use `<strong>` instead of `<b>` for important content.
+- Use `<em>` instead of `<i>` when emphasis is intended.
+- Structure pages using proper heading hierarchy.
+- Use semantic text elements whenever possible.
+- Use `<code>` for programming examples.
+- Avoid using formatting tags purely for visual styling; CSS should handle appearance.
+
+---
+
+# Cheat Sheet
+
+```text
+<h1>-<h6> → Headings
+<p>        → Paragraph
+<br>       → Line break
+<hr>       → Horizontal line
+<strong>   → Important text
+<em>       → Emphasized text
+<b>        → Bold text
+<i>        → Italic text
+<u>        → Underlined text
+<mark>     → Highlighted text
+<small>    → Smaller text
+<del>      → Deleted text
+<ins>      → Inserted text
+<sub>      → Subscript
+<sup>      → Superscript
+<q>        → Short quotation
+<blockquote> → Block quotation
+<abbr>     → Abbreviation
+<address>  → Contact information
+<code>     → Code snippet
+<pre>      → Preserve formatting
+```
